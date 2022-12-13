@@ -1,0 +1,32 @@
+import BN from "bn.js";
+export { DEFAULT_FUNCTION_CALL_GAS } from "near-api-js";
+export declare const NATIVE_TOKEN_DECIMALS = 24;
+export declare const NATIVE_STREAM_CREATION_GAS = "10000000000000";
+export declare const TOKEN_STREAM_CREATION_GAS = "55000000000000";
+export declare const STREAM_CANCEL_GAS = "55000000000000";
+export declare const STREAM_PAUSE_RESUME_GAS = "10000000000000";
+export declare const BASIC_STREAM_OP_GAS = "10000000000000";
+export declare const WITHDRAW_OP_GAS = "250000000000000";
+export declare const ONE_YOCTO_NEAR = "0.000000000000000000000001";
+export declare const ONE_NEAR = "1000000000000000000000000";
+export declare const ONE_NEAR_BN: BN;
+export declare function getConfig(env?: string | undefined): {
+    networkId: string;
+    nodeUrl: string;
+    walletUrl: string;
+    explorerUrl: string;
+    indexerUrl: string;
+    WRAP_NEAR_CONTRACT_ID: string;
+    ZSTREAM_CONTRACT_ID: string;
+};
+export declare let config: {
+    networkId: string;
+    nodeUrl: string;
+    walletUrl: string;
+    explorerUrl: string;
+    indexerUrl: string;
+    WRAP_NEAR_CONTRACT_ID: string;
+    ZSTREAM_CONTRACT_ID: string;
+};
+export declare let ZSTREAM_CONTRACT_ID: string;
+export declare let WRAP_NEAR_CONTRACT_ID: string;
